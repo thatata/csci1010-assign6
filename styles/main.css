@@ -1,0 +1,24 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  line-height: 120%;
+  font-family: Arial, sans-serif;
+  color: rgb(66,66,66);
+  letter-spacing: -0.05em;
+}
+
+div {
+	padding: 10pt;
+	text-align: center;
+}
