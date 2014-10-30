@@ -13,11 +13,14 @@ window.addEventListener("load", function(e) {
 	  var variable = window[selectListValue];
 	  // If the .json file exists and is correct, it will update the text and the icon
 	  // If not, it will default to the hello world text and icon
-	  if( variable ) {
+	document.querySelector('#text').textContent = "Debug: " + selectListValue;  
+	if( variable ) {
+		document.querySelector('#text').textContent = "Debug Two: " + selectListValue + variable;
 		  var data = JSON.parse(variable);
+document.querySelector('#text').textContent = "Debug Three: " + selectListValue;
 		  document.querySelector('#text').textContent = "Hello " +data[0].name+ "!";
 		  document.querySelector('#icon').src= data[0].icon;
-	  }else{
+	  } else {
 	  	 document.querySelector('#text').textContent = "Hello World!";
 	  	 document.querySelector('#icon').src= "resources/hello_world.png";
 	  }
